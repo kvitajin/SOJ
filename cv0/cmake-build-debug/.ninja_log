@@ -1,0 +1,6 @@
+# ninja log v5
+26	50	1644509598858054632	cv0	fefa315112b21b3f
+0	21	1644508919075416257	CMakeFiles/cv0.dir/tool.c.o	31c42feebc165c77
+0	26	1644509598834720593	CMakeFiles/cv0.dir/main.c.o	edf5aa6bbe70c6d1
+0	29	1644512140867165695	CMakeFiles/cv0.dir/tool.c.o	31c42feebc165c77
+0	30	1644512140867165695	CMakeFiles/cv0.dir/main.c.o	edf5aa6bbe70c6d1

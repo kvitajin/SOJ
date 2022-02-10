@@ -46,6 +46,6 @@ int main() {
     printf("Task4: X=%d, Y= %d\n", g_int_X, g_int_Y);
 
     task5();
-    printf("Task5: %X\n", g_int_X);
+    printf("Task5: %08x\n", g_int_X);
     return 0;
 }

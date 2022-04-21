@@ -76,7 +76,7 @@ int main() {
     int div10= div_fix10( float2fix10(10), float2fix10(3), Z10);
     printf("div10: %f\n", fix2float10(div10));
     int r=3;
-    float Vf=3.0/4.0*M_PI* pow(r,3);
+    float Vf=4.0/3.0*M_PI* pow(r,3);
     float Sf=4*M_PI* pow(r, 2);
 
     int r3b= mul_fix(mul_fix(float2fix(r),float2fix(r), D2), float2fix(r), D2);
@@ -99,11 +99,13 @@ int main() {
     printf("V10: %f\n", fix2float10(V10));
 
     int r2b=mul_fix(float2fix(r),float2fix(r), D2);
-    float S2= mul_fix(mul_fix(float2fix(4), float2fix(M_PI), D2), r2b, D2);
-//    float S10= mul_fix10(mul_fix10(float2fix10(4)));
+    int S2= mul_fix(mul_fix(float2fix(4), float2fix(M_PI), D2), r2b, D2);
+    int r2d=mul_fix10(float2fix10(r),float2fix10(r), Z10);
+    int S10= mul_fix10(mul_fix10(float2fix10(4), float2fix10(M_PI), Z10), r2d, Z10);
     printf("\n");
     printf("Sf: %f\n", Sf);
     printf("S2: %f\n", fix2float(S2));
+    printf("S10: %f\n", fix2float10(S10));
 
 
 

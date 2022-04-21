@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: cv8_1
+# Project: cv9
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__cv8_1_Debug
+rule C_COMPILER__cv9_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule C_COMPILER__cv8_1_Debug
 #############################################
 # Rule for linking C executable.
 
-rule C_EXECUTABLE_LINKER__cv8_1_Debug
+rule C_EXECUTABLE_LINKER__cv9_Debug
   command = $PRE_LINK && /usr/bin/cc $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/kvitajin/Codes/soj/cv8_1 -B/home/kvitajin/Codes/soj/cv8_1/cmake-build-debug
+  command = /home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/kvitajin/Codes/soj/cv9 -B/home/kvitajin/Codes/soj/cv9/cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

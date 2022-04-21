@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: cv8_1
+# Project: cv10
 # Configurations: Debug
 # =============================================================================
 
@@ -39,47 +39,47 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/kvitajin/Codes/soj/cv8_1/cmake-build-debug/
+cmake_ninja_workdir = /home/kvitajin/Codes/soj/cv10/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target cv8_1
+# Object build statements for EXECUTABLE target cv10
 
 
 #############################################
-# Order-only phony target for cv8_1
+# Order-only phony target for cv10
 
-build cmake_object_order_depends_target_cv8_1: phony || CMakeFiles/cv8_1.dir
+build cmake_object_order_depends_target_cv10: phony || CMakeFiles/cv10.dir
 
-build CMakeFiles/cv8_1.dir/main.c.o: C_COMPILER__cv8_1_Debug /home/kvitajin/Codes/soj/cv8_1/main.c || cmake_object_order_depends_target_cv8_1
-  DEP_FILE = CMakeFiles/cv8_1.dir/main.c.o.d
+build CMakeFiles/cv10.dir/main.c.o: C_COMPILER__cv10_Debug /home/kvitajin/Codes/soj/cv10/main.c || cmake_object_order_depends_target_cv10
+  DEP_FILE = CMakeFiles/cv10.dir/main.c.o.d
   FLAGS = -g -std=gnu99
-  OBJECT_DIR = CMakeFiles/cv8_1.dir
-  OBJECT_FILE_DIR = CMakeFiles/cv8_1.dir
-  TARGET_COMPILE_PDB = CMakeFiles/cv8_1.dir/
-  TARGET_PDB = cv8_1.pdb
+  OBJECT_DIR = CMakeFiles/cv10.dir
+  OBJECT_FILE_DIR = CMakeFiles/cv10.dir
+  TARGET_COMPILE_PDB = CMakeFiles/cv10.dir/
+  TARGET_PDB = cv10.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target cv8_1
+# Link build statements for EXECUTABLE target cv10
 
 
 #############################################
-# Link the executable cv8_1
+# Link the executable cv10
 
-build cv8_1: C_EXECUTABLE_LINKER__cv8_1_Debug CMakeFiles/cv8_1.dir/main.c.o
+build cv10: C_EXECUTABLE_LINKER__cv10_Debug CMakeFiles/cv10.dir/main.c.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/cv8_1.dir
+  OBJECT_DIR = CMakeFiles/cv10.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/cv8_1.dir/
-  TARGET_FILE = cv8_1
-  TARGET_PDB = cv8_1.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/cv10.dir/
+  TARGET_FILE = cv10
+  TARGET_PDB = cv10.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kvitajin/Codes/soj/cv8_1/cmake-build-debug && /home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/cmake/linux/bin/ccmake -S/home/kvitajin/Codes/soj/cv8_1 -B/home/kvitajin/Codes/soj/cv8_1/cmake-build-debug
+  COMMAND = cd /home/kvitajin/Codes/soj/cv10/cmake-build-debug && /home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/cmake/linux/bin/ccmake -S/home/kvitajin/Codes/soj/cv10 -B/home/kvitajin/Codes/soj/cv10/cmake-build-debug
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -91,7 +91,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kvitajin/Codes/soj/cv8_1/cmake-build-debug && /home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/kvitajin/Codes/soj/cv8_1 -B/home/kvitajin/Codes/soj/cv8_1/cmake-build-debug
+  COMMAND = cd /home/kvitajin/Codes/soj/cv10/cmake-build-debug && /home/kvitajin/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/221.5080.224/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/kvitajin/Codes/soj/cv10 -B/home/kvitajin/Codes/soj/cv10/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -107,9 +107,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/kvitajin/Codes/soj/cv8_1/cmake-build-debug
+# Folder: /home/kvitajin/Codes/soj/cv10/cmake-build-debug
 
-build all: phony cv8_1
+build all: phony cv10
 
 # =============================================================================
 # Built-in targets

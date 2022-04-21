@@ -10,24 +10,58 @@ int mul_intN_int32(int *t_intN, int t_len, int t_cinitel);
 #define N 8
 
 
-void intN_to_str( int *n, int N_INT, char *s ){
-    int pos=N_INT;
-    for (int i = 0; i < N_INT; ++i) {
-//        s[i]= div_intN_int32(&n[i], 1, 32)+'0';
-//        --pos;
-        s[i]=n[N_INT-i-1]+'0';
-    }
-}
+//void intN_to_str( int *n, int N_INT, char *s ){
+//    int pos=N_INT;
+//    for (int i = 0; i < N_INT; ++i) {
+////        s[i]= div_intN_int32(&n[i], 1, 32)+'0';
+////        --pos;
+//        s[i]=n[N_INT-i-1]+'0';
+//    }
+//}
 //d[0]=N%Z+'0'
 //N=N/Z
 
-void str_to_intN( char *s,int N_INT,int *n ){
-    for (int i = 0; i <N_INT; ++i) {
-        n[i]+=s[N_INT-i-1]-'0';
-    }
-}
+//void str_to_intN( char *s,int N_INT,int *n ){
+//    for (int i = 0; i <N_INT; ++i) {
+//        n[i]+=s[N_INT-i-1]-'0';
+//    }
+//}
 //N+=(s[i]-'0')+Z
 //N=N*Z
+int is_zero( int *t_n, int t_N ){
+    int i = 0;
+    while ( i < t_N ) {
+        if ( t_n[ i++ ] ) {
+            return 0;
+        }
+    }
+    return 1;
+}
+void intN_to_str(int* cislo, char* str, int N){
+int delka = 0;
+char* numStr = str;
+
+while (!is_zero(cislo, N)){
+*numStr++ = div_intN_int32(cislo, 10, N) + '0';
+delka++;
+};
+
+*numStr = '\0';
+
+for (int i = 0; i < delka / 2; i++){
+char tmp = str[i];
+str[i] = str[delka - 1 - i];
+str[delka - 1 - i] = tmp;
+}
+}
+
+void str_to_intN(char* str, int* cislo, int N){
+while (*str){
+mul_intN_int32(cislo, 10, N);
+add_intN_int32(cislo, *str - '0', N);
+str++;
+}
+}
 
 #define N_INT   2
 #define N_CHAR  ( N_INT * 32 * 10 / 3 + 2 )
@@ -59,6 +93,11 @@ int main() {
     }
     printf("\n");
 ///-----------------------------------------------------------//
+
+
+
+
+
 
 //    int over = mul_intN_int32( aN, N, 16 );
 //    over = mul_intN_int32( aN, N, 16 );

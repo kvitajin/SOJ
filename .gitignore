@@ -1,0 +1,5 @@
+./*/CMakeList.txt
+./*/main
+./*/asm-module.o
+./*/cmake-build-debug/
+./*/.idea/

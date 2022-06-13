@@ -1,6 +1,6 @@
 TARGET=main
 
-ARCH=32
+ARCH=64
 
 ifeq ($(ARCH), 32)
 CFLAGS += -m32
